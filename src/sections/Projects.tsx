@@ -1,6 +1,9 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import Image from "next/image";
+import CheckCircleIcon from "@/assets/icons/check-circle.svg";
+import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
 const portfolioProjects = [
   {
@@ -42,5 +45,65 @@ const portfolioProjects = [
 ];
 
 export const ProjectsSection = () => {
-  return <div>Projects Section</div>;
+  return (
+    <div className="pb-16 lg:py-24">
+      <div className="container">
+        <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">
+          Real-world Results
+        </p>
+        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">
+          Featured Projects
+        </h2>
+        <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4">
+          See how I transformed concepts into engaging digital experiences.
+        </p>
+        <div className="flex flex-col mt-10 md:mt-20 gap-16">
+          {portfolioProjects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-gray-800 rounded-3xl overflow-hidden border border-gray-700 shadow-lg px-6 md:pt-12 md:px-10 lg:px-16 lg:px-20"
+            >
+              <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:relative">
+                <div className="lg:pb-16">
+                  <div className="flex justify-center gap-2 bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text mb-4 font-bold uppercase tracking-widest text-sm md:text-lg lg:text-2xl py-8">
+                    <span>{project.company}</span>
+                    <span>&bull;</span>
+                    <span>{project.year}</span>
+                  </div>
+                  <h3 className="font-serif text-2xl mt-2 md:mt-5  md:text-4xl">
+                    {project.title}
+                  </h3>
+                  <hr className="border-t-2 border-white/20 mt-4" />
+                  <ul className="flex flex-col gap-4 mt-4 md:mt-5">
+                    {project.results.map((result, index) => (
+                      <li
+                        key={index}
+                        className="flex gap-2 text-sm md:text-base text-white/50"
+                      >
+                        <CheckCircleIcon className="size-5 md:size-6" />
+                        <span>{result.title}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <a href={project.link}>
+                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-6">
+                      <span>View Live Site</span>
+                      <ArrowUpRightIcon className="size-4" />
+                    </button>
+                  </a>
+                </div>
+                <div>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="mt-8 lg:-pt2 -lg:mt-0 lg:absolute lg:h-full lg:w-full lg:w-auto"
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
