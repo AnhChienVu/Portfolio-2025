@@ -57,8 +57,12 @@ export const ProjectsSection = () => {
         />
         <div className="flex flex-col mt-10 md:mt-20 gap-16">
           {portfolioProjects.map((project, index) => (
-            <Card>
-              <div className="lg:pb-16">
+            <Card
+              key={index}
+              className="sticky"
+              style={{ top: `calc(64px + ${index * 40}px)` }}
+            >
+              <div className="lg:pb-16 ">
                 <div className="flex justify-center gap-2 bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text mb-4 font-bold uppercase tracking-widest text-sm md:text-lg lg:text-2xl py-8">
                   <span>{project.company}</span>
                   <span>&bull;</span>
