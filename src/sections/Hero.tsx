@@ -66,10 +66,10 @@ export const HeroSection = () => {
             Building Exceptional User Experience
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Hi, I'm Chris Vu — a Computer Programming & Analysis graduate
+            Hi, I&apos;m Chris Vu — a Computer Programming & Analysis graduate
             passionate about building efficient, scalable, and user-friendly
-            software. I'm actively looking for opportunities to contribute to
-            exciting projects where I can grow and make an impact. Let&apos;s
+            software. I&apos;m actively looking for opportunities to contribute
+            to exciting projects where I can grow and make an impact. Let&apos;s
             dicuss your next project
           </p>
         </div>
