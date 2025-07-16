@@ -1,6 +1,7 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import tummyTimePage from "@/assets/images/tummytime-image.png";
+import watchHubPage from "@/assets/images/watchHub-image.png";
+import expenseTrackerPage from "@/assets/images/expenseTracker-image.png";
+import tripPlannerPage from "@/assets/images/tripplanner-image.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -9,46 +10,92 @@ import Card from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Tummy Time",
+    year: "2024",
+    title: "Web Appilaction to Track Newborn Care",
     results: [
       { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Boosting user interaction by 20%" },
+      {
+        title:
+          "Achieving 80%+ test coverage and reducing functional bugs by 35% during QA reviews",
+      },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://team-06-prj-666-winter-2025.vercel.app/",
+    image: tummyTimePage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Watch Hub",
+    year: "2025",
+    title: "A clone of Netflix for streaming movies and TV shows",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      {
+        title:
+          "Developed a Netflix-style movie streaming interface called Watch Hub using Next.js, delivering fast, responsive, and SEO-optimized user experiences.",
+      },
+      {
+        title:
+          "Integrated external movie APIs to fetch and display dynamic film content, enabling users to browse and explore 1,000+ movie titles with real-time updates.",
+      },
+      {
+        title:
+          "Designed interactive UI components with Tailwind CSS and responsive layout techniques, improving accessibility and mobile performance across 95% of screen sizes.",
+      },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://watch-hub-five.vercel.app/login",
+    image: watchHubPage,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Expense Tracker",
+    year: "2025",
+    title: "Expense tracking application",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      {
+        title:
+          "Developed a full-stack expense tracking application enabling users to manage daily expenses and savings goals through a clean, responsive UI.",
+      },
+      {
+        title:
+          "Implemented a real-time budget sharing feature with Socket.IO, allowing users to instantly track and receive notifications on shared finances with partners or friends",
+      },
+      {
+        title:
+          "Integrated Firebase Authentication with Google sign-in, simplifying the login process and enhancing account security for users.",
+      },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://expense-tracker-beta-navy.vercel.app/",
+    image: expenseTrackerPage,
+  },
+  {
+    company: "Trip Planner",
+    year: "2025",
+    title: "AI integration and personalized user experience",
+    results: [
+      {
+        title:
+          "Developed a personalized AI-powered Trip Planner using Vite.js, allowing users to generate multi-day itineraries based on destination, travel purpose, and duration.",
+      },
+      {
+        title:
+          "Integrated GenAI to generate dynamic travel plans tailored to user preferences, improving planning efficiency and user satisfaction by 70% during testing.",
+      },
+      {
+        title:
+          "Implemented Google Authentication for seamless and secure user login, resulting in a 25% faster sign-in process compared to traditional email-based flows.",
+      },
+      {
+        title:
+          "Designed a clean, responsive UI with Tailwind CSS, ensuring accessibility and optimal performance across 100% of major mobile and desktop devices.",
+      },
+    ],
+    link: "https://trip-planner-psi-ochre.vercel.app/",
+    image: tripPlannerPage,
   },
 ];
 
 export const ProjectsSection = () => {
   return (
-    <div className="pb-16 lg:py-24">
+    <div id="project" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
           eyebrow="Real-world Results"

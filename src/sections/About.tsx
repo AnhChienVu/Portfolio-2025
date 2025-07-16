@@ -92,7 +92,7 @@ const hobbies = [
 export const AboutSection = () => {
   const contraintRef = useRef(null);
   return (
-    <div className=" container py-20 lg:py-28">
+    <div id="about" className=" container py-20 lg:py-28">
       <SectionHeader
         eyebrow="About Me"
         title="A Glimps Into My World"
