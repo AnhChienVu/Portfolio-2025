@@ -14,11 +14,21 @@ const portfolioProjects = [
     year: "2024",
     title: "Web Appilaction to Track Newborn Care",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Boosting user interaction by 20%" },
       {
         title:
-          "Achieving 80%+ test coverage and reducing functional bugs by 35% during QA reviews",
+          "Refined the application’s UI/UX by collaborating with designers and stakeholders through planning and review sessions, leading to a 25% increase in task completion success during demonstrations",
+      },
+      {
+        title:
+          "Integrated AWS Cognito for secure authentication, ensuring full compliance with best practices in data privacy.",
+      },
+      {
+        title:
+          "Utilized Jest for unit testing to ensure reliability, achieving 80%+ test coverage and reducing functional bugs by 35% during QA reviews.",
+      },
+      {
+        title:
+          "Integrated an AI-powered chatbot into the application using a natural language processing API to provide real-time answers about baby care and app usage, boosting user interaction by 20%.",
       },
     ],
     link: "https://team-06-prj-666-winter-2025.vercel.app/",
