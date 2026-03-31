@@ -1,104 +1,109 @@
-import tummyTimePage from "@/assets/images/tummytime-image.png";
-import watchHubPage from "@/assets/images/watchHub-image.png";
-import expenseTrackerPage from "@/assets/images/expenseTracker-image.png";
-import tripPlannerPage from "@/assets/images/tripplanner-image.png";
-import Image from "next/image";
-import CheckCircleIcon from "@/assets/icons/check-circle.svg";
-import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import SectionHeader from "@/components/SectionHeader";
-import Card from "@/components/Card";
+import tummyTimePage from '@/assets/images/tummytime-image.png';
+import tinyStepsPage from '@/assets/images/tinysteps-image.png';
+import watchHubPage from '@/assets/images/watchHub-image.png';
+import expenseTrackerPage from '@/assets/images/expenseTracker-image.png';
+import tripPlannerPage from '@/assets/images/tripplanner-image.png';
+import Image from 'next/image';
+import CheckCircleIcon from '@/assets/icons/check-circle.svg';
+import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
+import SectionHeader from '@/components/SectionHeader';
+import Card from '@/components/Card';
 
 const portfolioProjects = [
   {
-    company: "Tummy Time",
-    year: "2024",
-    title: "Web Appilaction to Track Newborn Care",
+    company: 'Tiny Steps',
+    year: '2026',
+    title: 'Web Application to Track Newborn Care Activities',
     results: [
       {
         title:
-          "Refined the application’s UI/UX by collaborating with designers and stakeholders through planning and review sessions, leading to a 25% increase in task completion success during demonstrations",
+          'Built a full-stack baby care tracking application with 8+ core features and designed 10+ authenticated RESTful APIs using NestJS and PostgreSQL to manage child profiles, activity logs, invitations, and AI-driven workflows.',
       },
       {
         title:
-          "Integrated AWS Cognito for secure authentication, ensuring full compliance with best practices in data privacy.",
+          'Implemented secure authentication using Firebase Authentication with server-side token verification, ensuring protected routing and consistent API access.',
       },
       {
         title:
-          "Utilized Jest for unit testing to ensure reliability, achieving 80%+ test coverage and reducing functional bugs by 35% during QA reviews.",
+          'Integrated a context-aware AI chatbot powered by Gemini API, leveraging recent activity data and short-term memory to deliver real-time parenting insights.',
       },
       {
         title:
-          "Integrated an AI-powered chatbot into the application using a natural language processing API to provide real-time answers about baby care and app usage, boosting user interaction by 20%.",
+          'Integrated an AI-powered chatbot into the application using a natural language processing API to provide real-time answers about baby care and app usage, boosting user interaction by 20%.',
+      },
+      {
+        title:
+          'Achieved 98 Lighthouse performance score and 100 best practices/SEO scores through frontend optimization and efficient data handling.',
       },
     ],
-    link: "https://team-06-prj-666-winter-2025.vercel.app/",
-    image: tummyTimePage,
+    link: 'https://tiny-steps-frontend.vercel.app/',
+    image: tinyStepsPage,
   },
   {
-    company: "Watch Hub",
-    year: "2025",
-    title: "A clone of Netflix for streaming movies and TV shows",
+    company: 'Watch Hub',
+    year: '2025',
+    title: 'A clone of Netflix for streaming movies and TV shows',
     results: [
       {
         title:
-          "Developed a Netflix-style movie streaming interface called Watch Hub using Next.js, delivering fast, responsive, and SEO-optimized user experiences.",
+          'Developed a Netflix-style movie streaming interface called Watch Hub using Next.js, delivering fast, responsive, and SEO-optimized user experiences.',
       },
       {
         title:
-          "Integrated external movie APIs to fetch and display dynamic film content, enabling users to browse and explore 1,000+ movie titles with real-time updates.",
+          'Integrated external movie APIs to fetch and display dynamic film content, enabling users to browse and explore 1,000+ movie titles with real-time updates.',
       },
       {
         title:
-          "Designed interactive UI components with Tailwind CSS and responsive layout techniques, improving accessibility and mobile performance across 95% of screen sizes.",
+          'Designed interactive UI components with Tailwind CSS and responsive layout techniques, improving accessibility and mobile performance across 95% of screen sizes.',
       },
     ],
-    link: "https://watch-hub-five.vercel.app/login",
+    link: 'https://watch-hub-five.vercel.app/login',
     image: watchHubPage,
   },
   {
-    company: "Expense Tracker",
-    year: "2025",
-    title: "Expense tracking application",
+    company: 'Expense Tracker',
+    year: '2025',
+    title: 'Expense tracking application',
     results: [
       {
         title:
-          "Developed a full-stack expense tracking application enabling users to manage daily expenses and savings goals through a clean, responsive UI.",
+          'Developed a full-stack expense tracking application enabling users to manage daily expenses and savings goals through a clean, responsive UI.',
       },
       {
         title:
-          "Implemented a real-time budget sharing feature with Socket.IO, allowing users to instantly track and receive notifications on shared finances with partners or friends",
+          'Implemented a real-time budget sharing feature with Socket.IO, allowing users to instantly track and receive notifications on shared finances with partners or friends',
       },
       {
         title:
-          "Integrated Firebase Authentication with Google sign-in, simplifying the login process and enhancing account security for users.",
+          'Integrated Firebase Authentication with Google sign-in, simplifying the login process and enhancing account security for users.',
       },
     ],
-    link: "https://expense-tracker-beta-navy.vercel.app/",
+    link: 'https://expense-tracker-beta-navy.vercel.app/',
     image: expenseTrackerPage,
   },
   {
-    company: "Trip Planner",
-    year: "2025",
-    title: "AI integration and personalized user experience",
+    company: 'Trip Planner',
+    year: '2025',
+    title: 'AI integration and personalized user experience',
     results: [
       {
         title:
-          "Developed a personalized AI-powered Trip Planner using Vite.js, allowing users to generate multi-day itineraries based on destination, travel purpose, and duration.",
+          'Developed a personalized AI-powered Trip Planner using Vite.js, allowing users to generate multi-day itineraries based on destination, travel purpose, and duration.',
       },
       {
         title:
-          "Integrated GenAI to generate dynamic travel plans tailored to user preferences, improving planning efficiency and user satisfaction by 70% during testing.",
+          'Integrated GenAI to generate dynamic travel plans tailored to user preferences, improving planning efficiency and user satisfaction by 70% during testing.',
       },
       {
         title:
-          "Implemented Google Authentication for seamless and secure user login, resulting in a 25% faster sign-in process compared to traditional email-based flows.",
+          'Implemented Google Authentication for seamless and secure user login, resulting in a 25% faster sign-in process compared to traditional email-based flows.',
       },
       {
         title:
-          "Designed a clean, responsive UI with Tailwind CSS, ensuring accessibility and optimal performance across 100% of major mobile and desktop devices.",
+          'Designed a clean, responsive UI with Tailwind CSS, ensuring accessibility and optimal performance across 100% of major mobile and desktop devices.',
       },
     ],
-    link: "https://trip-planner-psi-ochre.vercel.app/",
+    link: 'https://trip-planner-psi-ochre.vercel.app/',
     image: tripPlannerPage,
   },
 ];
